@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:04:34 by ahajji            #+#    #+#             */
-/*   Updated: 2024/08/19 13:21:06 by ahajji           ###   ########.fr       */
+/*   Updated: 2024/08/19 13:28:12 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 #include <iostream>
 
-template<typename T, typename func>
+template<typename T, typename Func>
 void    iter(T *addArr, size_t length, Func func)
 {
     for (size_t i = 0; i < length; ++i) {
-        func(array[i]);
+        func(addArr[i]);
     }
 }
 
