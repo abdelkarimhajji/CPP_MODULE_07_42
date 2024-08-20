@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:40:58 by ahajji            #+#    #+#             */
-/*   Updated: 2024/08/20 15:01:31 by ahajji           ###   ########.fr       */
+/*   Updated: 2024/08/20 15:11:07 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@ int main()
     }
     std::cout << "this is the size : " << arr.size() << std::endl;
     
-    
     delete a;
-
-    // std::cout << getConst() << "\n"
     return 0;
 }
