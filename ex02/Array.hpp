@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:46:25 by ahajji            #+#    #+#             */
-/*   Updated: 2024/08/20 10:26:21 by ahajji           ###   ########.fr       */
+/*   Updated: 2024/08/20 11:55:43 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,18 @@ class Array
         T* arr;
         int size;
     public:
-        Array();
-        Array(unsigned int n);
+        Array() : arr(nullptr), size(0)
+        {
+            std::cout << "hi\n";
+        }
+        Array(unsigned int n) : arr(new T[n]()), size(n)
+        {
+            std::cout << "hi paramert\n" ;
+        }
+
+        ~Array() {
+            delete[] arr;
+        }
 };
 
 

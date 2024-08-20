@@ -6,12 +6,17 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:40:58 by ahajji            #+#    #+#             */
-/*   Updated: 2024/08/20 09:45:37 by ahajji           ###   ########.fr       */
+/*   Updated: 2024/08/20 12:05:20 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Array.hpp"
+
 int main()
 {
-    
+    Array<int> arr(5);
+    int * a = new int();
+    std::cout << *a << std::endl;
+    delete a;
     return 0;
 }
