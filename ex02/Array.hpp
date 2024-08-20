@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:46:25 by ahajji            #+#    #+#             */
-/*   Updated: 2024/08/20 15:00:36 by ahajji           ###   ########.fr       */
+/*   Updated: 2024/08/20 21:10:43 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Array
         {
             std::cout << "hi paramert\n" ;
         }
-        Array(const Array& array) : arr(new T[array._size]), _size(array._size)
+        Array(const Array& array) : arr(new T[array._size]()), _size(array._size)
         {
             unsigned int i = 0;
             while (i < _size)
